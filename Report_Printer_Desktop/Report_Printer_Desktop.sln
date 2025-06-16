@@ -5,6 +5,14 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report_Printer_Desktop", "Report_Printer_Desktop.csproj", "{122AF1DC-CF1B-4D29-9695-05AE465D9737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report_Printer_Desktop.DAL", "..\Report_Printer_Desktop.DAL\Report_Printer_Desktop.DAL.csproj", "{8B292D00-FC43-443A-8C8E-3B3585432CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report_Printer_Desktop.DSL", "..\Report_Printer_Desktop.DSL\Report_Printer_Desktop.DSL.csproj", "{881AB8F8-BC68-4049-8BBE-3422CBD18633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report_Printer_Desktop.Entities", "..\Report_Printer_Desktop.Entities\Report_Printer_Desktop.Entities.csproj", "{D9C0472B-FFBF-45E1-911E-41DDAAFB380E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report_Printer_Desktop.Helpers", "..\Report_Printer_Desktop.Helpers\Report_Printer_Desktop.Helpers.csproj", "{38A763F3-CFF0-4ABA-9014-466020CD91BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{122AF1DC-CF1B-4D29-9695-05AE465D9737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{122AF1DC-CF1B-4D29-9695-05AE465D9737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{122AF1DC-CF1B-4D29-9695-05AE465D9737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B292D00-FC43-443A-8C8E-3B3585432CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B292D00-FC43-443A-8C8E-3B3585432CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B292D00-FC43-443A-8C8E-3B3585432CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B292D00-FC43-443A-8C8E-3B3585432CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881AB8F8-BC68-4049-8BBE-3422CBD18633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881AB8F8-BC68-4049-8BBE-3422CBD18633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881AB8F8-BC68-4049-8BBE-3422CBD18633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881AB8F8-BC68-4049-8BBE-3422CBD18633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C0472B-FFBF-45E1-911E-41DDAAFB380E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C0472B-FFBF-45E1-911E-41DDAAFB380E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C0472B-FFBF-45E1-911E-41DDAAFB380E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C0472B-FFBF-45E1-911E-41DDAAFB380E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A763F3-CFF0-4ABA-9014-466020CD91BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A763F3-CFF0-4ABA-9014-466020CD91BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A763F3-CFF0-4ABA-9014-466020CD91BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A763F3-CFF0-4ABA-9014-466020CD91BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
