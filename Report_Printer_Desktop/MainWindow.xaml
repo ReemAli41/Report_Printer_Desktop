@@ -1,12 +1,48 @@
 ﻿<Window x:Class="Report_Printer_Desktop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Report_Printer_Desktop"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        xmlns:userControls="clr-namespace:Report_Printer_Desktop.UserControls"
+        Title="Report Printer"
+        Width="1200" Height="800"
+        WindowStartupLocation="CenterScreen">
 
+    <Grid>
+        <!-- Correct Grid Rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Row 0: Header -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row 1: Check Connection -->
+            <RowDefinition Height="*"/>
+            <!-- Row 2: Result List -->
+            <RowDefinition Height="Auto"/>
+            <!-- Row 3: Footer -->
+        </Grid.RowDefinitions>
+
+        <!-- ✅ 1) HEADER -->
+        <userControls:HeaderUserControl Grid.Row="0" 
+                                        Height="90"
+                                        Background="#228BC8" Loaded="HeaderUserControl_Loaded"/>
+
+        <!-- ✅ 2) CHECK CONNECTION -->
+        <userControls:CheckConnection Grid.Row="1"
+                                      Margin="0,50,0,0"
+                                      HorizontalAlignment="Center" Height="223" VerticalAlignment="Top" Width="416"/>
+
+        <!-- ✅ 3) RESULT LIST -->
+        <userControls:ResultListView Grid.Row="2"
+                                     Background="White"
+                                     Margin="20,10,20,30"/>
+
+        <!-- ✅ 4) FOOTER -->
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="10">
+            <TextBlock Text="Version: " VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding ApplicationVersion}" 
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Report_Printer_Desktop.UserControls.CheckConnection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="White"
+             Padding="20">
+
+    <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="400" >
+        <TextBlock Text="Connection String:" Margin="0,0,0,5"/>
+        <TextBox Text="{Binding ConnectionString, UpdateSourceTrigger=PropertyChanged}" 
+                 Height="30" />
+
+        <TextBlock Text="Sequence Number:" Margin="0,20,0,5"/>
+        <TextBox Text="{Binding SequenceNumber, UpdateSourceTrigger=PropertyChanged}" 
+                 Height="30" />
+
+        <Button Content="Test Connection"
+                Command="{Binding TestConnectionCommand}"
+                Background="#228BC8"
+                Width="200"
+                Height="40"
+                Margin="0,20,0,0"
+                HorizontalAlignment="Left" />
+
+        <TextBlock Text="{Binding TestResult}"
+                   Foreground="DarkGreen"
+                   FontWeight="Bold"
+                   Margin="0,20,0,0"/>
+    </StackPanel>
+
+</UserControl>

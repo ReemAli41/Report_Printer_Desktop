@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Report_Printer_Desktop.UserControls.ResultListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Report_Printer_Desktop.ViewModels"
+             d:DataContext="{d:DesignInstance Type=vm:ResultListViewModel, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d"
+             Background="#228BC8">
+
+    <Grid Width="800">
+        <ListView ItemsSource="{Binding Results}">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="VerticalContentAlignment"   Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+
+            <ListView.View>
+                <GridView>
+                    <!-- Single File Name column -->
+                    <GridViewColumn Header="File Name" Width="Auto">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding FileName}"
+                                           TextAlignment="Left"
+                                           Padding="4,2" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</UserControl>

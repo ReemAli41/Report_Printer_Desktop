@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Report_Printer_Desktop.ViewModels;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,17 @@ namespace Report_Printer_Desktop
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel();
+        }
+
+        private void ResultListView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HeaderUserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

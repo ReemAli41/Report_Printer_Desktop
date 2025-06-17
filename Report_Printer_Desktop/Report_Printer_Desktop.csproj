@@ -9,14 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icon\logo.jpeg" />
+    <None Remove="Icon\start.png" />
+    <None Remove="Icon\stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Icon\" />
     <Folder Include="Models\" />
     <Folder Include="Windows\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="UserControls\" />
     <Folder Include="ResourceDictionaries\" />
+	
+
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icon\logo.jpeg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icon\start.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icon\stop.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
